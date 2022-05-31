@@ -3,3 +3,4 @@ Include
 
 settings
 __pycache__/
+.env

@@ -1,8 +1,11 @@
 from telegram.ext import Updater,CallbackContext,CommandHandler
 from telegram.update import Update
-import settings
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-updater = Updater(token = settings.TELEGRAM_TOKEN)
+
+updater = Updater(token = os.getenv('TELEGRAM_TOKEN'))
 
 
 
